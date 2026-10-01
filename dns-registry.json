@@ -1,0 +1,352 @@
+{
+  "version": 1,
+  "updated": "2026-10-01T18:05:00Z",
+  "description": "Public remote DNS registry for OmniChat Smart Routing. Real resolver endpoints are maintained here, not compiled into the APK.",
+  "providers": [
+    {
+      "id": "comss-one",
+      "name": "Comss.one DNS",
+      "enabled": true,
+      "priority": 10,
+      "capabilities": [
+        "openai",
+        "gemini",
+        "claude",
+        "grok",
+        "github_copilot",
+        "microsoft_copilot",
+        "google_ai_studio"
+      ],
+      "domains": [
+        "chatgpt.com",
+        "*.chatgpt.com",
+        "openai.com",
+        "*.openai.com",
+        "oaistatic.com",
+        "*.oaistatic.com",
+        "oaiusercontent.com",
+        "*.oaiusercontent.com",
+        "gemini.google.com",
+        "gemini.google",
+        "aistudio.google.com",
+        "ai.google.dev",
+        "generativelanguage.googleapis.com",
+        "daily-cloudcode-pa.googleapis.com",
+        "cloudcode-pa.googleapis.com",
+        "geminiweb-pa.clients6.google.com",
+        "claude.ai",
+        "*.claude.ai",
+        "claude.com",
+        "*.claude.com",
+        "anthropic.com",
+        "*.anthropic.com",
+        "grok.com",
+        "*.grok.com",
+        "x.ai",
+        "*.x.ai",
+        "githubcopilot.com",
+        "*.githubcopilot.com",
+        "api.githubcopilot.com",
+        "copilot.microsoft.com",
+        "*.copilot.microsoft.com"
+      ],
+      "protocols": {
+        "doh": "https://dns.comss.one/dns-query",
+        "dot": "tls://dns.comss.one:853"
+      },
+      "source_url": "https://www.comss.ru/page.php?id=7315"
+    },
+    {
+      "id": "malw-link",
+      "name": "dns.malw.link",
+      "enabled": true,
+      "priority": 20,
+      "capabilities": [
+        "openai",
+        "gemini",
+        "claude",
+        "grok",
+        "github_copilot",
+        "google_ai_studio",
+        "groq",
+        "elevenlabs",
+        "antigravity",
+        "jules",
+        "stitch",
+        "codeium"
+      ],
+      "domains": [
+        "chatgpt.com",
+        "*.chatgpt.com",
+        "openai.com",
+        "*.openai.com",
+        "oaistatic.com",
+        "*.oaistatic.com",
+        "oaiusercontent.com",
+        "*.oaiusercontent.com",
+        "gemini.google.com",
+        "gemini.google",
+        "aistudio.google.com",
+        "ai.google.dev",
+        "generativelanguage.googleapis.com",
+        "daily-cloudcode-pa.googleapis.com",
+        "cloudcode-pa.googleapis.com",
+        "geminiweb-pa.clients6.google.com",
+        "claude.ai",
+        "*.claude.ai",
+        "claude.com",
+        "*.claude.com",
+        "anthropic.com",
+        "*.anthropic.com",
+        "grok.com",
+        "*.grok.com",
+        "x.ai",
+        "*.x.ai",
+        "githubcopilot.com",
+        "*.githubcopilot.com",
+        "api.githubcopilot.com",
+        "api.groq.com",
+        "console.groq.com",
+        "elevenlabs.io",
+        "*.elevenlabs.io"
+      ],
+      "protocols": {
+        "doh": "https://dns.malw.link/dns-query",
+        "dot": "tls://dns.malw.link:853"
+      },
+      "source_url": "https://info.dns.malw.link/"
+    },
+    {
+      "id": "xbox-dns",
+      "name": "Xbox DNS",
+      "enabled": true,
+      "priority": 30,
+      "capabilities": [
+        "openai",
+        "gemini",
+        "claude",
+        "github_copilot",
+        "microsoft_copilot"
+      ],
+      "domains": [
+        "chatgpt.com",
+        "*.chatgpt.com",
+        "openai.com",
+        "*.openai.com",
+        "oaistatic.com",
+        "*.oaistatic.com",
+        "oaiusercontent.com",
+        "*.oaiusercontent.com",
+        "gemini.google.com",
+        "gemini.google",
+        "aistudio.google.com",
+        "ai.google.dev",
+        "generativelanguage.googleapis.com",
+        "daily-cloudcode-pa.googleapis.com",
+        "cloudcode-pa.googleapis.com",
+        "geminiweb-pa.clients6.google.com",
+        "claude.ai",
+        "*.claude.ai",
+        "claude.com",
+        "*.claude.com",
+        "anthropic.com",
+        "*.anthropic.com",
+        "githubcopilot.com",
+        "*.githubcopilot.com",
+        "api.githubcopilot.com",
+        "copilot.microsoft.com",
+        "*.copilot.microsoft.com"
+      ],
+      "protocols": {
+        "doh": "https://xbox-dns.ru/dns-query",
+        "dot": "tls://xbox-dns.ru:853"
+      },
+      "source_url": "https://xbox-dns.ru/"
+    },
+    {
+      "id": "astracat",
+      "name": "Astracat DNS",
+      "enabled": true,
+      "priority": 40,
+      "capabilities": [
+        "openai",
+        "gemini"
+      ],
+      "domains": [
+        "chatgpt.com",
+        "*.chatgpt.com",
+        "openai.com",
+        "*.openai.com",
+        "oaistatic.com",
+        "*.oaistatic.com",
+        "oaiusercontent.com",
+        "*.oaiusercontent.com",
+        "gemini.google.com",
+        "gemini.google",
+        "aistudio.google.com",
+        "ai.google.dev",
+        "generativelanguage.googleapis.com",
+        "daily-cloudcode-pa.googleapis.com",
+        "cloudcode-pa.googleapis.com",
+        "geminiweb-pa.clients6.google.com"
+      ],
+      "protocols": {
+        "doh": "https://dns.astracat.ru/dns-query",
+        "dot": "tls://dns.astracat.ru:853"
+      },
+      "source_url": "https://github.com/ASTRACAT2022/host-DNS"
+    },
+    {
+      "id": "geohide",
+      "name": "GeoHide DNS",
+      "enabled": true,
+      "priority": 50,
+      "capabilities": [
+        "openai",
+        "gemini",
+        "claude",
+        "google_ai_studio"
+      ],
+      "domains": [
+        "chatgpt.com",
+        "*.chatgpt.com",
+        "openai.com",
+        "*.openai.com",
+        "oaistatic.com",
+        "*.oaistatic.com",
+        "oaiusercontent.com",
+        "*.oaiusercontent.com",
+        "gemini.google.com",
+        "gemini.google",
+        "aistudio.google.com",
+        "ai.google.dev",
+        "generativelanguage.googleapis.com",
+        "daily-cloudcode-pa.googleapis.com",
+        "cloudcode-pa.googleapis.com",
+        "geminiweb-pa.clients6.google.com",
+        "claude.ai",
+        "*.claude.ai",
+        "claude.com",
+        "*.claude.com",
+        "anthropic.com",
+        "*.anthropic.com"
+      ],
+      "protocols": {
+        "doh": "https://dns.geohide.ru:444/dns-query"
+      },
+      "source_url": "https://status.dns.geohide.ru/"
+    },
+    {
+      "id": "mafioznik",
+      "name": "Mafioznik DNS",
+      "enabled": true,
+      "priority": 60,
+      "capabilities": [
+        "openai",
+        "gemini"
+      ],
+      "domains": [
+        "chatgpt.com",
+        "*.chatgpt.com",
+        "openai.com",
+        "*.openai.com",
+        "oaistatic.com",
+        "*.oaistatic.com",
+        "oaiusercontent.com",
+        "*.oaiusercontent.com",
+        "gemini.google.com",
+        "gemini.google",
+        "aistudio.google.com",
+        "ai.google.dev",
+        "generativelanguage.googleapis.com",
+        "daily-cloudcode-pa.googleapis.com",
+        "cloudcode-pa.googleapis.com",
+        "geminiweb-pa.clients6.google.com"
+      ],
+      "protocols": {
+        "doh": "https://dns.mafioznik.xyz/dns-query",
+        "dot": "tls://dns.mafioznik.xyz:853"
+      },
+      "mirrors": [
+        "dns2.mafioznik.xyz"
+      ],
+      "source_url": "https://dns.mafioznik.xyz/"
+    },
+    {
+      "id": "control-d-custom",
+      "name": "Control D · Custom Smart DNS",
+      "enabled": false,
+      "priority": 900,
+      "capabilities": [
+        "custom_domains",
+        "custom_routing"
+      ],
+      "domains": [],
+      "protocols": {},
+      "catalog_only": true,
+      "requires_account": true,
+      "notes": "The programmable Smart DNS discussed for OmniChat uses a per-account/per-endpoint resolver hostname. No universal geo-unblocking DoH/DoT endpoint is safe to publish here."
+    },
+    {
+      "id": "dnsflex-smartdns",
+      "name": "DNSFlex Smart DNS",
+      "enabled": false,
+      "priority": 910,
+      "capabilities": [
+        "custom_domains",
+        "custom_routing"
+      ],
+      "domains": [],
+      "protocols": {},
+      "catalog_only": true,
+      "requires_account": true,
+      "notes": "Smart DNS supports custom domains and regions, but the service is account/network specific; no public universal DoH/DoT endpoint was verified for OmniChat."
+    },
+    {
+      "id": "keepsolid-smartdns",
+      "name": "KeepSolid SmartDNS",
+      "enabled": false,
+      "priority": 920,
+      "capabilities": [
+        "smart_dns"
+      ],
+      "domains": [],
+      "protocols": {},
+      "catalog_only": true,
+      "requires_account": true,
+      "legacy_dns": [
+        "62.210.136.158",
+        "172.96.164.226"
+      ],
+      "notes": "Requires registered/whitelisted client IP and currently documents legacy DNS IPs. OmniChat Registry v1 routes only DoH/DoT."
+    },
+    {
+      "id": "torguard-smartdns",
+      "name": "TorGuard Smart DNS",
+      "enabled": false,
+      "priority": 930,
+      "capabilities": [
+        "smart_dns"
+      ],
+      "domains": [],
+      "protocols": {},
+      "catalog_only": true,
+      "requires_account": true,
+      "notes": "No public universal DoH/DoT Smart DNS endpoint was verified for direct use by OmniChat; TorGuard DNS documentation is tied to its service/VPN configuration."
+    },
+    {
+      "id": "smart-dns-proxy",
+      "name": "Smart DNS Proxy",
+      "enabled": false,
+      "priority": 940,
+      "capabilities": [
+        "smart_dns"
+      ],
+      "domains": [],
+      "protocols": {},
+      "catalog_only": true,
+      "requires_account": true,
+      "notes": "Uses account/network authorization and provider-specific DNS addresses; no public universal DoH/DoT endpoint was verified for direct OmniChat Registry use."
+    }
+  ]
+}
