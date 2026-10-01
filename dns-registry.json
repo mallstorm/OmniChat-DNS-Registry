@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-01T18:05:00Z",
+  "updated": "2026-10-01T18:25:00Z",
   "description": "Public remote DNS registry for OmniChat Smart Routing. Real resolver endpoints are maintained here, not compiled into the APK.",
   "providers": [
     {
@@ -54,7 +54,45 @@
         "doh": "https://dns.comss.one/dns-query",
         "dot": "tls://dns.comss.one:853"
       },
-      "source_url": "https://www.comss.ru/page.php?id=7315"
+      "source_url": "https://www.comss.ru/page.php?id=7315",
+      "probes": {
+        "openai": [
+          {
+            "host": "chatgpt.com",
+            "https": true
+          }
+        ],
+        "gemini": [
+          {
+            "host": "gemini.google.com",
+            "https": true
+          }
+        ],
+        "claude": [
+          {
+            "host": "claude.ai",
+            "https": true
+          }
+        ],
+        "grok": [
+          {
+            "host": "grok.com",
+            "https": true
+          }
+        ],
+        "github_copilot": [
+          {
+            "host": "api.githubcopilot.com",
+            "https": true
+          }
+        ],
+        "microsoft_copilot": [
+          {
+            "host": "copilot.microsoft.com",
+            "https": true
+          }
+        ]
+      }
     },
     {
       "id": "malw-link",
@@ -114,7 +152,51 @@
         "doh": "https://dns.malw.link/dns-query",
         "dot": "tls://dns.malw.link:853"
       },
-      "source_url": "https://info.dns.malw.link/"
+      "source_url": "https://info.dns.malw.link/",
+      "probes": {
+        "openai": [
+          {
+            "host": "chatgpt.com",
+            "https": true
+          }
+        ],
+        "gemini": [
+          {
+            "host": "gemini.google.com",
+            "https": true
+          }
+        ],
+        "claude": [
+          {
+            "host": "claude.ai",
+            "https": true
+          }
+        ],
+        "grok": [
+          {
+            "host": "grok.com",
+            "https": true
+          }
+        ],
+        "github_copilot": [
+          {
+            "host": "api.githubcopilot.com",
+            "https": true
+          }
+        ],
+        "groq": [
+          {
+            "host": "api.groq.com",
+            "https": true
+          }
+        ],
+        "elevenlabs": [
+          {
+            "host": "elevenlabs.io",
+            "https": true
+          }
+        ]
+      }
     },
     {
       "id": "xbox-dns",
@@ -161,7 +243,39 @@
         "doh": "https://xbox-dns.ru/dns-query",
         "dot": "tls://xbox-dns.ru:853"
       },
-      "source_url": "https://xbox-dns.ru/"
+      "source_url": "https://xbox-dns.ru/",
+      "probes": {
+        "openai": [
+          {
+            "host": "chatgpt.com",
+            "https": true
+          }
+        ],
+        "gemini": [
+          {
+            "host": "gemini.google.com",
+            "https": true
+          }
+        ],
+        "claude": [
+          {
+            "host": "claude.ai",
+            "https": true
+          }
+        ],
+        "github_copilot": [
+          {
+            "host": "api.githubcopilot.com",
+            "https": true
+          }
+        ],
+        "microsoft_copilot": [
+          {
+            "host": "copilot.microsoft.com",
+            "https": true
+          }
+        ]
+      }
     },
     {
       "id": "astracat",
@@ -194,7 +308,21 @@
         "doh": "https://dns.astracat.ru/dns-query",
         "dot": "tls://dns.astracat.ru:853"
       },
-      "source_url": "https://github.com/ASTRACAT2022/host-DNS"
+      "source_url": "https://github.com/ASTRACAT2022/host-DNS",
+      "probes": {
+        "openai": [
+          {
+            "host": "chatgpt.com",
+            "https": true
+          }
+        ],
+        "gemini": [
+          {
+            "host": "gemini.google.com",
+            "https": true
+          }
+        ]
+      }
     },
     {
       "id": "geohide",
@@ -234,7 +362,27 @@
       "protocols": {
         "doh": "https://dns.geohide.ru:444/dns-query"
       },
-      "source_url": "https://status.dns.geohide.ru/"
+      "source_url": "https://status.dns.geohide.ru/",
+      "probes": {
+        "openai": [
+          {
+            "host": "chatgpt.com",
+            "https": true
+          }
+        ],
+        "gemini": [
+          {
+            "host": "gemini.google.com",
+            "https": true
+          }
+        ],
+        "claude": [
+          {
+            "host": "claude.ai",
+            "https": true
+          }
+        ]
+      }
     },
     {
       "id": "mafioznik",
@@ -270,7 +418,21 @@
       "mirrors": [
         "dns2.mafioznik.xyz"
       ],
-      "source_url": "https://dns.mafioznik.xyz/"
+      "source_url": "https://dns.mafioznik.xyz/",
+      "probes": {
+        "openai": [
+          {
+            "host": "chatgpt.com",
+            "https": true
+          }
+        ],
+        "gemini": [
+          {
+            "host": "gemini.google.com",
+            "https": true
+          }
+        ]
+      }
     },
     {
       "id": "control-d-custom",
