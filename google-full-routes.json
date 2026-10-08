@@ -1,24 +1,63 @@
 {
   "version": 1,
-  "updated": "2026-10-08T19:30:00Z",
-  "description": "Dedicated full-route resolvers for official Google traffic. These routes are intentionally separate from the general AI Smart DNS pool used for ChatGPT and Gemini.",
+  "updated": "2026-10-08T20:05:00Z",
+  "description": "Dedicated full-route resolvers for official Google traffic. These routes are intentionally separate from the general AI Smart DNS pool used for ChatGPT and Gemini. Clients should prefer DoH/DoT and keep UDP/53 only as legacy fallback.",
   "routes": [
     {
-      "id": "eurodns-nl",
-      "name": "EuroDNS NL",
+      "id": "eurodns-nl-doh",
+      "name": "EuroDNS NL · DoH",
       "enabled": true,
       "priority": 10,
-      "protocol": "udp53",
-      "host": "147.45.114.74",
-      "port": 53,
+      "protocol": "doh",
+      "endpoint": "https://smartdns.147-45-114-74.sslip.io/dns-query",
       "source_url": "https://github.com/UglyRacoon/eurodns",
-      "notes": "Dedicated Google Full route. The resolver maps selected Google hosts to an EU transparent SNI proxy; TLS remains end-to-end. IPv4 A lookups are used intentionally to avoid IPv6/QUIC route leakage.",
+      "notes": "Encrypted Google Full route over HTTPS/443. The EuroDNS resolver maps selected Google hosts to its EU transparent SNI proxy; client TLS to Google remains end-to-end.",
       "domains": [
         "google.com",
         "googleapis.com",
         "gstatic.com",
         "googleusercontent.com",
-        "google.com.ua"
+        "google.com.ua",
+        "googledrive.com"
+      ]
+    },
+    {
+      "id": "eurodns-nl-dot",
+      "name": "EuroDNS NL · DoT",
+      "enabled": true,
+      "priority": 11,
+      "protocol": "dot",
+      "host": "smartdns.147-45-114-74.sslip.io",
+      "bootstrap_ip": "147.45.114.74",
+      "port": 853,
+      "source_url": "https://github.com/UglyRacoon/eurodns",
+      "notes": "Encrypted Google Full route over TLS/853. bootstrap_ip avoids dependence on the current system resolver while SNI/certificate validation still uses the resolver hostname.",
+      "domains": [
+        "google.com",
+        "googleapis.com",
+        "gstatic.com",
+        "googleusercontent.com",
+        "google.com.ua",
+        "googledrive.com"
+      ]
+    },
+    {
+      "id": "eurodns-nl-udp53",
+      "name": "EuroDNS NL · UDP legacy",
+      "enabled": true,
+      "priority": 90,
+      "protocol": "udp53",
+      "host": "147.45.114.74",
+      "port": 53,
+      "source_url": "https://github.com/UglyRacoon/eurodns",
+      "notes": "Legacy compatibility route. New clients rank encrypted transports above it and use this only when they actually pass live probes.",
+      "domains": [
+        "google.com",
+        "googleapis.com",
+        "gstatic.com",
+        "googleusercontent.com",
+        "google.com.ua",
+        "googledrive.com"
       ]
     }
   ]
